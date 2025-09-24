@@ -33,7 +33,7 @@ module "private_instance" {
   labels = {
     vcluster  = local.vcluster_name
     namespace = local.vcluster_namespace
-    demoEnv   = local.demo_env_name
+    demo_env   = local.demo_env_name
   }
 }
 
