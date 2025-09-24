@@ -2,7 +2,7 @@ locals {
   project = module.validation.project
   region  = module.validation.region
 
-  demo_env_name      = nonsensitive(var.vcluster.nodeType.spec.properties["demo-env-name"])
+  demo_env_name      = "vcp"
   vcluster_name      = nonsensitive(var.vcluster.instance.metadata.name)
   vcluster_namespace = nonsensitive(var.vcluster.instance.metadata.namespace)
 
