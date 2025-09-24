@@ -37,11 +37,6 @@ spec:
                 tag: v1.33.4
         privateNodes:
           enabled: true
-        joinNode:
-          # Might be useful to configure ec2 machine for private ecr
-          preJoinCommands:
-            - echo "Starting Pre-join commands"
-            - echo "Pre-join commands complete"
           vpn:
             enabled: true
             nodeToNode:
