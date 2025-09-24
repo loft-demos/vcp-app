@@ -239,7 +239,7 @@ spec:
                     type: oci
                     oci:
                       credential:
-                        secretName: loft-demos-ghcr-write-pat
+                        secretName: vcluster-demos-ghcr-write-pat
                         secretNamespace: {{ .Values.loft.virtualClusterNamespace }}
                       repository: oci://ghcr.io/loft-demos/vcp-app
             sleepMode:
@@ -278,9 +278,9 @@ spec:
             apiVersion: v1
             kind: Secret
             metadata:
-              name: loft-demos-ghcr-write-pat
+              name: vcluster-demos-ghcr-write-pat
               labels:
-                loft.sh/project-secret-name: loft-demos-ghcr-write-pat
+                loft.sh/project-secret-name: vcluster-demos-ghcr-write-pat
                 org: loft-demos
                 repo: vcp-app
             type: Opaque
