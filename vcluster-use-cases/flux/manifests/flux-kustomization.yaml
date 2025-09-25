@@ -3,28 +3,6 @@ kind: Namespace
 metadata:
   name: p-vcluster-flux-demo
 ---
-apiVersion: v1
-kind: Secret
-metadata:
-  name: demo-admin-access-key
-  namespace: p-vcluster-flux-demo
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
-  labels:
-    loft.sh/project-secret-name: demo-admin-access-key
-type: Opaque
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: ghcr-login-secret
-  namespace: p-vcluster-flux-demo
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
-  labels:
-    loft.sh/project-secret-name: ghcr-login-secret
-type: Opaque
----
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
