@@ -37,6 +37,9 @@ spec:
     - kind: VirtualClusterTemplate
       group: storage.loft.sh
       name: vcluster-pro-template
+    - kind: VirtualClusterTemplate
+      group: storage.loft.sh
+      name: sleepy-vcluster-template
   requireTemplate: {}
   members:
     - kind: Team
