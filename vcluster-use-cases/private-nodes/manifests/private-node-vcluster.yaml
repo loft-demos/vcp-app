@@ -41,21 +41,21 @@ spec:
             enabled: true
             nodeToNode:
               enabled: true
-          autoNodes:
-            dynamic:
-              - name: gcp-vcp-node-pool
-                provider: gcp-compute-vcp-node-provider
-                limits:
-                  cpu: '30'
-                requirements:
-                  - property: region
-                    operator: In
-                    values:
-                      - us-central1
-                  - property: spot
-                    operator: NotIn
-                    values:
-                      - 'true'
+          # autoNodes:
+          #   dynamic:
+          #     - name: gcp-vcp-node-pool
+          #       provider: gcp-compute-vcp-node-provider
+          #       limits:
+          #         cpu: '30'
+          #       requirements:
+          #         - property: region
+          #           operator: In
+          #           values:
+          #             - us-central1
+          #         - property: spot
+          #           operator: NotIn
+          #           values:
+          #             - 'true'
     accessPoint:
       ingress: {}
     spaceTemplate:
