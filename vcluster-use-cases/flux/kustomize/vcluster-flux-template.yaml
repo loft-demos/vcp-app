@@ -87,8 +87,8 @@ spec:
           ingress: {}
         spaceTemplate:
           metadata: {}
-          apps: # this bash app will create a Kube Config for Flux that uses the vCluster Platform proxied URL
-            - name: generate-vcluster-kubeconfig
+          # apps: # this bash app will create a Kube Config for Flux that uses the vCluster Platform proxied URL
+          #   - name: generate-vcluster-kubeconfig
       parameters:
         - variable: env
           label: Deployment Environment
