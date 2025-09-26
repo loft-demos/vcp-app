@@ -49,6 +49,7 @@ spec:
       label: Sleep After Inactivity (minutes)
       type: number
       options:
+        - '5'
         - '30'
         - '45'
         - '60'
